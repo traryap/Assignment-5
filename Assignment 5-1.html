@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 5</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 700px;
+            /* only for demonstration, should be removed */
+            background: rgb(16, 0, 158);
+            padding: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(179, 14, 11);
+            height: 700px;
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: rgb(6, 1, 32);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2><img src="UFC/1200px-UFC_Logo.png" alt="UFC Logo" height="104pt" width="300pt">
+        </h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <h1>Fighters</h1>
+                <li><a href="Conor/Conor McGregor.html">Conor McGregor</a></li>
+                <li><a href="Sean/Sean O'Malley.html">Sean O'Malley</a></li>
+                <li><a href="Valentina/Valentina.html">Valentina Shevchenko</a></li>
+                <hr>
+                <img src="UFC/UFC 274.jpg" alt="UFC 274" height="67%" width="67%">
+            </ul>
+
+        </nav>
+
+        <article style="font-family: 'Helvetica'; color: white; padding: 3%; font-size: 1.5vw;">
+            <h1>Ultimate Fighting Championship</h1>
+            <p>Starting in 1993 as a professional mixed martial arts (MMA) organization, 
+            UFC® has revolutionized the fight business and today stands as a premium global 
+            sports brand, media content company and the largest Pay-Per-View (PPV) event provider 
+            in the world.</p>
+            <hr>
+            <h1> What is MMA?</h1>
+            <p>Mixed martial arts (MMA) is a full-contact combat sport that allows a wide variety 
+                of fighting techniques and skills from a mixture of other combat sports to be used in 
+                competition. The rules allow usage of both striking and grappling techniques while standing 
+                and on the ground. Competitions allow athletes of different backgrounds to compete.</p>
+                <img src="UFC/APEX.jpg" alt="UFC Apex" height="30%" width="30%">
+                <img src="UFC/UFC-Apex_Arena.jpg" alt="UFC Apex" height="30%" width="30%">
+                <img src="UFC/UFC 269.jpg" alt="UFC Apex" height="30%" width="30%">
+        </article>
+    </section>
+    <img src="ufc/conor with belts.jpg" alt="Conor McGregor" height="100%" width="100%"> 
+    <footer>
+    </footer>
+
+</body>
+
+</html>
